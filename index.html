@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenLine Lawn Care | Madison, NJ</title>
+  <meta name="description" content="GreenLine Lawn Care provides reliable lawn mowing and leaf cleanup in Madison, NJ and nearby areas.">
+  <style>
+    :root { --green:#1f6b3a; --dark:#173524; --light:#f4f8f3; --gold:#e4ad38; --text:#26332a; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Arial,Helvetica,sans-serif; color:var(--text); line-height:1.6; background:white; }
+    nav { position:sticky; top:0; z-index:10; background:white; box-shadow:0 2px 12px #0001; display:flex; justify-content:space-between; align-items:center; padding:16px 7%; }
+    .logo { font-size:1.35rem; font-weight:800; color:var(--green); }
+    nav a { color:var(--dark); text-decoration:none; margin-left:24px; font-weight:600; }
+    .hero { background:linear-gradient(135deg,#173524ee,#1f6b3add),url('') center/cover; color:white; padding:105px 7% 95px; }
+    .hero-inner { max-width:850px; }
+    .tag { display:inline-block; background:#ffffff20; border:1px solid #ffffff45; padding:7px 13px; border-radius:30px; margin-bottom:18px; font-weight:700; }
+    h1 { font-size:clamp(2.5rem,6vw,4.8rem); line-height:1.05; margin-bottom:20px; }
+    .hero p { font-size:1.2rem; max-width:650px; margin-bottom:30px; color:#eef7ef; }
+    .btn { display:inline-block; background:var(--gold); color:#172116; padding:14px 23px; border-radius:9px; text-decoration:none; font-weight:800; border:none; cursor:pointer; }
+    section { padding:75px 7%; }
+    .section-title { text-align:center; max-width:700px; margin:0 auto 42px; }
+    .section-title h2 { font-size:2.3rem; color:var(--dark); margin-bottom:8px; }
+    .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:25px; max-width:1000px; margin:auto; }
+    .card { background:var(--light); border-radius:16px; padding:32px; border:1px solid #dce9dd; }
+    .icon { font-size:2.5rem; margin-bottom:12px; }
+    .card h3 { color:var(--green); font-size:1.45rem; margin-bottom:8px; }
+    .why { background:#f4f8f3; }
+    .why-grid { max-width:950px; margin:auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; text-align:center; }
+    .why-item { padding:22px; }
+    .why-item strong { display:block; font-size:1.1rem; color:var(--dark); margin-top:8px; }
+    .quote { background:var(--dark); color:white; }
+    .quote-wrap { max-width:720px; margin:auto; }
+    .quote h2 { font-size:2.3rem; margin-bottom:8px; }
+    .quote p { color:#dce9df; margin-bottom:25px; }
+    form { display:grid; gap:14px; }
+    input, select, textarea { width:100%; padding:14px; border-radius:8px; border:1px solid #cbd8ce; font:inherit; }
+    textarea { min-height:120px; resize:vertical; }
+    .notice { font-size:.9rem; color:#cfe2d3; margin-top:12px; }
+    footer { background:#10261a; color:#cbd8ce; text-align:center; padding:28px 7%; }
+    footer strong { color:white; }
+    @media(max-width:700px) {
+      nav a { margin-left:10px; font-size:.9rem; }
+      nav { padding:14px 5%; }
+      .hero { padding:80px 6%; }
+      section { padding:58px 6%; }
+      .cards, .why-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">🌿 GreenLine Lawn Care</div>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#quote">Get a Quote</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="tag">Madison, NJ & nearby areas</span>
+      <h1>A cleaner yard starts here.</h1>
+      <p>Reliable lawn mowing and seasonal leaf cleanup to keep your property looking neat, fresh, and cared for.</p>
+      <a class="btn" href="#quote">GET A FREE QUOTE</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Simple, dependable yard care focused on the jobs your lawn needs most.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🌱</div>
+        <h3>Lawn Mowing</h3>
+        <p>Keep your grass looking neat with regular mowing and a clean finish around the property.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🍂</div>
+        <h3>Leaf Cleanup</h3>
+        <p>When fall arrives, we'll help clear leaves from your yard and get your property looking tidy again.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="section-title">
+      <h2>Why GreenLine?</h2>
+      <p>We're focused on doing a great job and treating every yard with care.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">🌿<strong>Quality Work</strong><span>We take pride in a clean finished yard.</span></div>
+      <div class="why-item">📅<strong>Reliable Service</strong><span>Clear communication and dependable scheduling.</span></div>
+      <div class="why-item">📍<strong>Local Service</strong><span>Proudly serving Madison and nearby communities.</span></div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <div class="quote-wrap">
+      <h2>Request a Free Quote</h2>
+      <p>Tell us what your yard needs. We'll review your request and get back to you with pricing and scheduling.</p>
+      <form id="quoteForm">
+        <input id="name" required placeholder="Your name">
+        <input id="contact" required placeholder="Phone or email">
+        <select id="service" required>
+          <option value="">Select a service</option>
+          <option>Lawn Mowing</option>
+          <option>Leaf Cleanup</option>
+          <option>Both</option>
+        </select>
+        <input id="area" placeholder="Town / neighborhood">
+        <textarea id="details" placeholder="Tell us anything helpful about the yard (size, number of leaves, etc.)"></textarea>
+        <button class="btn" type="submit">SEND QUOTE REQUEST</button>
+      </form>
+      <p class="notice">Before publishing this site, replace the contact method with a parent/guardian-approved business phone or email.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>GreenLine Lawn Care</strong> · Mowing & Leaf Cleanup · Madison, NJ & nearby areas</p>
+    <p>© 2026 GreenLine Lawn Care</p>
+  </footer>
+
+  <script>
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const contact = document.getElementById('contact').value;
+      const service = document.getElementById('service').value;
+      const area = document.getElementById('area').value;
+      const details = document.getElementById('details').value;
+      const subject = encodeURIComponent('GreenLine Lawn Care Quote Request');
+      const body = encodeURIComponent(
+        `Name: ${name}\nContact: ${contact}\nService: ${service}\nArea: ${area}\nDetails: ${details}`
+      );
+      // Replace this email with the business email before publishing.
+      window.location.href = `mailto:YOUR-EMAIL-HERE@example.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
